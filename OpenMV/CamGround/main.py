@@ -9,9 +9,9 @@ cmdStatus = 0x00 #Stop
 
 #色环阈值
 redThresh = (0, 100, 19, 127, -18, 127)
-greenThresh = (0, 100, -128, -25, -127, 127)
+greenThresh = (0, 100, -128, -20, -128, 127)
 blueThresh = (0, 100, -128, 127, -128, -23)
-whiteThresh = (99, 100, -128, 127, -128, 127)
+targetThresh = (93, 100, -30, -15, 89, 104)
 
 def SendStr(str):
     byteStr = bytearray(str)
@@ -40,7 +40,7 @@ def ResetSensorForDetectLeftLine():
     sensor.set_windowing((0, 40, 180, 120))
     #sensor.set_auto_gain(False)
     #sensor.set_auto_whitebal(False)
-    sensor.skip_frames(time = 500)
+    #sensor.skip_frames(time = 500)
 
 def DetectLeftLine():
     img = sensor.snapshot()
@@ -63,7 +63,7 @@ def ResetSensorForDetectRightLine():
     sensor.set_windowing((0, 40, 250, 160))
     #sensor.set_auto_gain(False)
     #sensor.set_auto_whitebal(False)
-    sensor.skip_frames(time = 500)
+    #sensor.skip_frames(time = 500)
 
 def DetectRightLine():
     img = sensor.snapshot()
@@ -87,28 +87,38 @@ def ResetSensorForDetectColorCircle():
     sensor.set_pixformat(sensor.RGB565)
     sensor.set_framesize(sensor.VGA)
     sensor.set_windowing((180, 0, 300, 480))
-    sensor.skip_frames(time = 500)
+    #sensor.skip_frames(time = 500)
 
 def DetectColorCircle(thresh):
     img = sensor.snapshot()
     cnt = 0
     cx = 0
     cy = 0
+    maxArea = 0
     for blob in img.find_blobs([thresh], invert = False, x_stride = 2, y_stride = 2, area_threshold = 2, pixels_threshold = 2, merge = True, margin = 50):
         img.draw_rectangle(blob.rect(), color = (0, 255, 0))
-        cx += blob.cx()
-        cy += blob.cy()
         cnt += 1
-    if cnt != 1:
+        if maxArea < blob.area():
+            maxArea = blob.area()
+            cx = blob.cx()
+            cy = blob.cy()
+    if cnt == 0:
         return [0, 0]
-    cx /= cnt
-    cy /= cnt
-    img.flood_fill(int(cx) + 15, int(cy) + 15, seed_threshold = 0.15, floating_threshold = 0.08, color = (255, 255, 255), invert = False, clear_background = True)
+
+    img.flood_fill(int(cx) + 20, int(cy) + 20, seed_threshold = 0.3, floating_threshold = 0.05, color = (255, 255, 0), invert = False, clear_background = False)
+    img.flood_fill(int(cx) + 20, int(cy) - 20, seed_threshold = 0.3, floating_threshold = 0.05, color = (255, 255, 0), invert = False, clear_background = False)
+    img.flood_fill(int(cx) - 20, int(cy) + 20, seed_threshold = 0.3, floating_threshold = 0.05, color = (255, 255, 0), invert = False, clear_background = False)
+    img.flood_fill(int(cx) - 20, int(cy) - 20, seed_threshold = 0.3, floating_threshold = 0.05, color = (255, 255, 0), invert = False, clear_background = False)
+
+    img.draw_cross(int(cx) + 20, int(cy) + 20, color = (0, 255, 255))
+    img.draw_cross(int(cx) + 20, int(cy) - 20, color = (0, 255, 255))
+    img.draw_cross(int(cx) - 20, int(cy) + 20, color = (0, 255, 255))
+    img.draw_cross(int(cx) - 20, int(cy) - 20, color = (0, 255, 255))
 
     cx = 0
     cy = 0
     cnt = 0
-    for blob in img.find_blobs([whiteThresh], invert = False, x_stride = 2, y_stride = 2, area_threshold = 2, pixels_threshold = 2, merge = True, margin = 50):
+    for blob in img.find_blobs([targetThresh], invert = False, x_stride = 2, y_stride = 2, area_threshold = 2, pixels_threshold = 2, merge = True, margin = 50):
         img.draw_rectangle(blob.rect(), color = (255, 0, 0))
         cx += blob.cx()
         cy += blob.cy()
@@ -145,7 +155,7 @@ def ResetSensorForDetectAllCircle():
     #sensor.set_auto_whitebal(False)
     sensor.set_pixformat(sensor.RGB565)
     sensor.set_framesize(sensor.QQVGA)
-    sensor.skip_frames(time = 500)
+    #sensor.skip_frames(time = 500)
 
 def DetectAllCircle():
     img = sensor.snapshot()
@@ -171,7 +181,7 @@ def ResetSensorForDetectRedObject():
     sensor.set_pixformat(sensor.RGB565)
     sensor.set_framesize(sensor.QQVGA)
     sensor.set_windowing((50, 0, 110, 120))
-    sensor.skip_frames(time = 500)
+    #sensor.skip_frames(time = 500)
 
 def DetectRedObject():
     img = sensor.snapshot()
@@ -196,7 +206,7 @@ def ResetSensorForDetectGreenObject():
     sensor.set_pixformat(sensor.RGB565)
     sensor.set_framesize(sensor.QQVGA)
     sensor.set_windowing((50, 0, 110, 120))
-    sensor.skip_frames(time = 500)
+    #sensor.skip_frames(time = 500)
 
 def DetectGreenObject():
     img = sensor.snapshot()
@@ -221,7 +231,7 @@ def ResetSensorForDetectBlueObject():
     sensor.set_pixformat(sensor.RGB565)
     sensor.set_framesize(sensor.QQVGA)
     sensor.set_windowing((50, 0, 110, 120))
-    sensor.skip_frames(time = 500)
+    #sensor.skip_frames(time = 500)
 
 def DetectBlueObject():
     img = sensor.snapshot()

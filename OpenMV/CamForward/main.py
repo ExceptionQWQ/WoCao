@@ -33,7 +33,7 @@ def ResetSensorForQrcodeScan():
     sensor.set_auto_whitebal(False)
     sensor.set_pixformat(sensor.RGB565)
     sensor.set_framesize(sensor.QVGA)
-    sensor.skip_frames(time = 1000)
+    #sensor.skip_frames(time = 1000)
 
 def ScanQrcode():
     img = sensor.snapshot()

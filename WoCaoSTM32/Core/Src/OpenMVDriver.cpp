@@ -5,7 +5,7 @@ int OpenMVDriver::GetUpdateTick()
     return updateTick;
 }
 
-void OpenMVDriver::SendSignal(enum OPENMV_CMD cmd, int cnt, bool isDelay)
+void OpenMVDriver::SendSignal(enum OPENMV_CMD cmd, int cnt, long delay)
 {
     if (cmdStatus == cmd) return ;
     dx = 0; dy = 0;
@@ -16,8 +16,8 @@ void OpenMVDriver::SendSignal(enum OPENMV_CMD cmd, int cnt, bool isDelay)
         HAL_UART_Transmit(&huart1, &cmdBuff, 1, 100);
         HAL_UART_Transmit(&huart2, &cmdBuff, 1, 100);
     }
-    if (isDelay)
-        HAL_Delay(600); //等待传感器稳定
+    if (delay)
+        HAL_Delay(delay); //等待传感器稳定
 }
 
 void OpenMVDriver::StoreStr(uint8_t* data, int dataLen)

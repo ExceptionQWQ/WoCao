@@ -934,7 +934,6 @@ void RobotMain()
 
     RobotInit();
 
-
 //    servoDriver.SetServoSpeed(servoSpeed);
 //
 //
@@ -953,7 +952,7 @@ void RobotMain()
     servoDriver.MoveLeftToFindLine();
     robotMotion.MoveForwardWithDisAndFindLeftLine(robotSpeed, 113000); //走到二维码
 
-    robotMotion.MoveLeftWithDis(30, 13000); //退一段距离扫描二维码
+    robotMotion.MoveLeftWithDis(30, 12000); //退一段距离扫描二维码
     servoDriver.ClawOpen2();
     servoDriver.MoveRightToFindQrcode();
 
@@ -961,7 +960,7 @@ void RobotMain()
 
     servoDriver.MoveFromRightToFindQrcode();
 
-    robotMotion.MoveRightWithDis(30, 13000); //回到赛道中间
+    robotMotion.MoveRightWithDis(30, 12000); //回到赛道中间
 
 
     LCDShowQrcodeInfo(qrcode); //显示扫描结果
@@ -1414,7 +1413,7 @@ void RobotMain()
     servoDriver.MoveLeftToFindLine();
     robotMotion.MoveForwardWithDisAndFindLeftLine(robotSpeed, 85000); //走到转弯处
     robotMotion.TurnLeft(30);
-    robotMotion.MoveForwardWithDisAndFindLeftLine(robotSpeed, 166000); //走到粗加工区
+    robotMotion.MoveForwardWithDisAndFindLeftLine(robotSpeed, 163000); //走到粗加工区
 
     servoDriver.MoveRightToFindCircle();
     switch (colorSeq1[1]) { //定位中间的圆环
@@ -1555,5 +1554,8 @@ void RobotMain()
     robotMotion.MoveForwardWithDisAndFindLeftLine(robotSpeed, 316000); //走到起停区
 
     servoDriver.Init(); //复位
-    robotMotion.MoveXYWithDis(30, 40000, -20000); //回到起停区
+    robotMotion.MoveXYWithDis(30, 0, -22000); //回到起停区
+    HAL_Delay(100);
+    robotMotion.MoveXYWithDis(5, 0, 500); //稍微离开挡板
+    robotMotion.MoveXYWithDis(30, 40000, 0); //回到起停区
 }

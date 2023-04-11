@@ -1,4 +1,4 @@
-# Install script for directory: /Users/mac/CLionProjects/WoCaoSTM32
+# Install script for directory: /Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/mac/CLionProjects/WoCaoSTM32/cmake-build-release/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/cmake-build-release/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

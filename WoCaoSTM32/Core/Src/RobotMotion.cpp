@@ -293,6 +293,7 @@ void RobotMotion::TrackCenterCircle(enum OPENMV_CMD cmd, int eps)
     while (true) {
         int tick2 = openMVDriver.GetUpdateTick();
         if (tick == tick2) continue;
+
         auto ret = openMVDriver.GetPair();
         if (ret.first == 0 || ret.second == 0) continue;
 

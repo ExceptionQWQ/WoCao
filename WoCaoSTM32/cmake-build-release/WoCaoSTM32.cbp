@@ -8,38 +8,38 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/Users/mac/CLionProjects/WoCaoSTM32/cmake-build-release"/>
+				<Option working_dir="/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/cmake-build-release"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/Users/mac/CLionProjects/WoCaoSTM32/cmake-build-release/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/mac/CLionProjects/WoCaoSTM32/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/Users/mac/CLionProjects/WoCaoSTM32/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/mac/CLionProjects/WoCaoSTM32/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/cmake-build-release/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/Users/mac/CLionProjects/WoCaoSTM32/cmake-build-release"/>
+				<Option working_dir="/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/cmake-build-release"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/Users/mac/CLionProjects/WoCaoSTM32/cmake-build-release/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/mac/CLionProjects/WoCaoSTM32/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/Users/mac/CLionProjects/WoCaoSTM32/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/mac/CLionProjects/WoCaoSTM32/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/cmake-build-release/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/Users/mac/CLionProjects/WoCaoSTM32/cmake-build-release"/>
+				<Option working_dir="/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/cmake-build-release"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/Users/mac/CLionProjects/WoCaoSTM32/cmake-build-release/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/mac/CLionProjects/WoCaoSTM32/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/Users/mac/CLionProjects/WoCaoSTM32/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/mac/CLionProjects/WoCaoSTM32/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/cmake-build-release/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="WoCaoSTM32.elf">
-				<Option output="/Users/mac/CLionProjects/WoCaoSTM32/cmake-build-release/WoCaoSTM32.elf" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/mac/CLionProjects/WoCaoSTM32/cmake-build-release"/>
+				<Option output="/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/cmake-build-release/WoCaoSTM32.elf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/cmake-build-release"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -47,11 +47,11 @@
 					<Add option="-DDEBUG"/>
 					<Add option="-DUSE_HAL_DRIVER"/>
 					<Add option="-DSTM32F407xx"/>
-					<Add directory="/Users/mac/CLionProjects/WoCaoSTM32/Core/Inc"/>
-					<Add directory="/Users/mac/CLionProjects/WoCaoSTM32/Drivers/STM32F4xx_HAL_Driver/Inc"/>
-					<Add directory="/Users/mac/CLionProjects/WoCaoSTM32/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy"/>
-					<Add directory="/Users/mac/CLionProjects/WoCaoSTM32/Drivers/CMSIS/Device/ST/STM32F4xx/Include"/>
-					<Add directory="/Users/mac/CLionProjects/WoCaoSTM32/Drivers/CMSIS/Include"/>
+					<Add directory="/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/Core/Inc"/>
+					<Add directory="/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/Drivers/STM32F4xx_HAL_Driver/Inc"/>
+					<Add directory="/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy"/>
+					<Add directory="/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/Drivers/CMSIS/Device/ST/STM32F4xx/Include"/>
+					<Add directory="/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/Drivers/CMSIS/Include"/>
 					<Add directory="/Applications/ARM/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1"/>
 					<Add directory="/Applications/ARM/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi"/>
 					<Add directory="/Applications/ARM/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward"/>
@@ -60,15 +60,15 @@
 					<Add directory="/Applications/ARM/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/Users/mac/CLionProjects/WoCaoSTM32/cmake-build-release/Makefile&quot;  VERBOSE=1 WoCaoSTM32.elf"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/mac/CLionProjects/WoCaoSTM32/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/Users/mac/CLionProjects/WoCaoSTM32/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/mac/CLionProjects/WoCaoSTM32/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/cmake-build-release/Makefile&quot;  VERBOSE=1 WoCaoSTM32.elf"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="WoCaoSTM32.elf/fast">
-				<Option output="/Users/mac/CLionProjects/WoCaoSTM32/cmake-build-release/WoCaoSTM32.elf" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/mac/CLionProjects/WoCaoSTM32/cmake-build-release"/>
+				<Option output="/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/cmake-build-release/WoCaoSTM32.elf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/cmake-build-release"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -76,11 +76,11 @@
 					<Add option="-DDEBUG"/>
 					<Add option="-DUSE_HAL_DRIVER"/>
 					<Add option="-DSTM32F407xx"/>
-					<Add directory="/Users/mac/CLionProjects/WoCaoSTM32/Core/Inc"/>
-					<Add directory="/Users/mac/CLionProjects/WoCaoSTM32/Drivers/STM32F4xx_HAL_Driver/Inc"/>
-					<Add directory="/Users/mac/CLionProjects/WoCaoSTM32/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy"/>
-					<Add directory="/Users/mac/CLionProjects/WoCaoSTM32/Drivers/CMSIS/Device/ST/STM32F4xx/Include"/>
-					<Add directory="/Users/mac/CLionProjects/WoCaoSTM32/Drivers/CMSIS/Include"/>
+					<Add directory="/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/Core/Inc"/>
+					<Add directory="/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/Drivers/STM32F4xx_HAL_Driver/Inc"/>
+					<Add directory="/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy"/>
+					<Add directory="/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/Drivers/CMSIS/Device/ST/STM32F4xx/Include"/>
+					<Add directory="/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/Drivers/CMSIS/Include"/>
 					<Add directory="/Applications/ARM/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1"/>
 					<Add directory="/Applications/ARM/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi"/>
 					<Add directory="/Applications/ARM/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward"/>
@@ -89,296 +89,296 @@
 					<Add directory="/Applications/ARM/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/Users/mac/CLionProjects/WoCaoSTM32/cmake-build-release/Makefile&quot;  VERBOSE=1 WoCaoSTM32.elf/fast"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/mac/CLionProjects/WoCaoSTM32/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/Users/mac/CLionProjects/WoCaoSTM32/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/mac/CLionProjects/WoCaoSTM32/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/cmake-build-release/Makefile&quot;  VERBOSE=1 WoCaoSTM32.elf/fast"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/mac/CLionProjects/WoCaoSTM32/Core/.DS_Store">
+		<Unit filename="/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/Core/.DS_Store">
 			<Option target="WoCaoSTM32.elf"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/WoCaoSTM32/Core/Inc/LCD/FONT.H">
+		<Unit filename="/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/Core/Inc/LCD/FONT.H">
 			<Option target="WoCaoSTM32.elf"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/WoCaoSTM32/Core/Inc/LCD/GUI.h">
+		<Unit filename="/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/Core/Inc/LCD/GUI.h">
 			<Option target="WoCaoSTM32.elf"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/WoCaoSTM32/Core/Inc/LCD/lcd.h">
+		<Unit filename="/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/Core/Inc/LCD/lcd.h">
 			<Option target="WoCaoSTM32.elf"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/WoCaoSTM32/Core/Inc/LCD/numfont.h">
+		<Unit filename="/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/Core/Inc/LCD/numfont.h">
 			<Option target="WoCaoSTM32.elf"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/WoCaoSTM32/Core/Inc/MediumBlur.h">
+		<Unit filename="/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/Core/Inc/MediumBlur.h">
 			<Option target="WoCaoSTM32.elf"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/WoCaoSTM32/Core/Inc/OpenMVDriver.h">
+		<Unit filename="/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/Core/Inc/OpenMVDriver.h">
 			<Option target="WoCaoSTM32.elf"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/WoCaoSTM32/Core/Inc/RobotMain.h">
+		<Unit filename="/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/Core/Inc/RobotMain.h">
 			<Option target="WoCaoSTM32.elf"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/WoCaoSTM32/Core/Inc/RobotMotion.h">
+		<Unit filename="/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/Core/Inc/RobotMotion.h">
 			<Option target="WoCaoSTM32.elf"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/WoCaoSTM32/Core/Inc/ServoDriver.h">
+		<Unit filename="/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/Core/Inc/ServoDriver.h">
 			<Option target="WoCaoSTM32.elf"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/WoCaoSTM32/Core/Inc/WheelPWM.h">
+		<Unit filename="/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/Core/Inc/WheelPWM.h">
 			<Option target="WoCaoSTM32.elf"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/WoCaoSTM32/Core/Inc/main.h">
+		<Unit filename="/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/Core/Inc/main.h">
 			<Option target="WoCaoSTM32.elf"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/WoCaoSTM32/Core/Inc/stm32f4xx_hal_conf.h">
+		<Unit filename="/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/Core/Inc/stm32f4xx_hal_conf.h">
 			<Option target="WoCaoSTM32.elf"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/WoCaoSTM32/Core/Inc/stm32f4xx_it.h">
+		<Unit filename="/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/Core/Inc/stm32f4xx_it.h">
 			<Option target="WoCaoSTM32.elf"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/WoCaoSTM32/Core/Src/LCD/GUI.cpp">
+		<Unit filename="/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/Core/Src/LCD/GUI.cpp">
 			<Option target="WoCaoSTM32.elf"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/WoCaoSTM32/Core/Src/LCD/lcd.cpp">
+		<Unit filename="/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/Core/Src/LCD/lcd.cpp">
 			<Option target="WoCaoSTM32.elf"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/WoCaoSTM32/Core/Src/MediumBlur.cpp">
+		<Unit filename="/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/Core/Src/MediumBlur.cpp">
 			<Option target="WoCaoSTM32.elf"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/WoCaoSTM32/Core/Src/OpenMVDriver.cpp">
+		<Unit filename="/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/Core/Src/OpenMVDriver.cpp">
 			<Option target="WoCaoSTM32.elf"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/WoCaoSTM32/Core/Src/RobotMain.cpp">
+		<Unit filename="/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/Core/Src/RobotMain.cpp">
 			<Option target="WoCaoSTM32.elf"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/WoCaoSTM32/Core/Src/RobotMotion.cpp">
+		<Unit filename="/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/Core/Src/RobotMotion.cpp">
 			<Option target="WoCaoSTM32.elf"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/WoCaoSTM32/Core/Src/ServoDriver.cpp">
+		<Unit filename="/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/Core/Src/ServoDriver.cpp">
 			<Option target="WoCaoSTM32.elf"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/WoCaoSTM32/Core/Src/WheelPWM.cpp">
+		<Unit filename="/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/Core/Src/WheelPWM.cpp">
 			<Option target="WoCaoSTM32.elf"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/WoCaoSTM32/Core/Src/main.c">
+		<Unit filename="/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/Core/Src/main.c">
 			<Option target="WoCaoSTM32.elf"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/WoCaoSTM32/Core/Src/stm32f4xx_hal_msp.c">
+		<Unit filename="/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/Core/Src/stm32f4xx_hal_msp.c">
 			<Option target="WoCaoSTM32.elf"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/WoCaoSTM32/Core/Src/stm32f4xx_it.c">
+		<Unit filename="/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/Core/Src/stm32f4xx_it.c">
 			<Option target="WoCaoSTM32.elf"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/WoCaoSTM32/Core/Src/syscalls.c">
+		<Unit filename="/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/Core/Src/syscalls.c">
 			<Option target="WoCaoSTM32.elf"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/WoCaoSTM32/Core/Src/sysmem.c">
+		<Unit filename="/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/Core/Src/sysmem.c">
 			<Option target="WoCaoSTM32.elf"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/WoCaoSTM32/Core/Src/system_stm32f4xx.c">
+		<Unit filename="/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/Core/Src/system_stm32f4xx.c">
 			<Option target="WoCaoSTM32.elf"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/WoCaoSTM32/Core/Startup/startup_stm32f407zgtx.s">
+		<Unit filename="/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/Core/Startup/startup_stm32f407zgtx.s">
 			<Option target="WoCaoSTM32.elf"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/WoCaoSTM32/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h">
+		<Unit filename="/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h">
 			<Option target="WoCaoSTM32.elf"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/WoCaoSTM32/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h">
+		<Unit filename="/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h">
 			<Option target="WoCaoSTM32.elf"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/WoCaoSTM32/Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h">
+		<Unit filename="/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h">
 			<Option target="WoCaoSTM32.elf"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/WoCaoSTM32/Drivers/CMSIS/Device/ST/STM32F4xx/License.md">
+		<Unit filename="/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/Drivers/CMSIS/Device/ST/STM32F4xx/License.md">
 			<Option target="WoCaoSTM32.elf"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/WoCaoSTM32/Drivers/CMSIS/Include/cmsis_armcc.h">
+		<Unit filename="/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/Drivers/CMSIS/Include/cmsis_armcc.h">
 			<Option target="WoCaoSTM32.elf"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/WoCaoSTM32/Drivers/CMSIS/Include/cmsis_armclang.h">
+		<Unit filename="/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/Drivers/CMSIS/Include/cmsis_armclang.h">
 			<Option target="WoCaoSTM32.elf"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/WoCaoSTM32/Drivers/CMSIS/Include/cmsis_compiler.h">
+		<Unit filename="/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/Drivers/CMSIS/Include/cmsis_compiler.h">
 			<Option target="WoCaoSTM32.elf"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/WoCaoSTM32/Drivers/CMSIS/Include/cmsis_gcc.h">
+		<Unit filename="/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/Drivers/CMSIS/Include/cmsis_gcc.h">
 			<Option target="WoCaoSTM32.elf"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/WoCaoSTM32/Drivers/CMSIS/Include/cmsis_iccarm.h">
+		<Unit filename="/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/Drivers/CMSIS/Include/cmsis_iccarm.h">
 			<Option target="WoCaoSTM32.elf"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/WoCaoSTM32/Drivers/CMSIS/Include/cmsis_version.h">
+		<Unit filename="/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/Drivers/CMSIS/Include/cmsis_version.h">
 			<Option target="WoCaoSTM32.elf"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/WoCaoSTM32/Drivers/CMSIS/Include/core_armv8mbl.h">
+		<Unit filename="/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/Drivers/CMSIS/Include/core_armv8mbl.h">
 			<Option target="WoCaoSTM32.elf"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/WoCaoSTM32/Drivers/CMSIS/Include/core_armv8mml.h">
+		<Unit filename="/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/Drivers/CMSIS/Include/core_armv8mml.h">
 			<Option target="WoCaoSTM32.elf"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/WoCaoSTM32/Drivers/CMSIS/Include/core_cm0.h">
+		<Unit filename="/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/Drivers/CMSIS/Include/core_cm0.h">
 			<Option target="WoCaoSTM32.elf"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/WoCaoSTM32/Drivers/CMSIS/Include/core_cm0plus.h">
+		<Unit filename="/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/Drivers/CMSIS/Include/core_cm0plus.h">
 			<Option target="WoCaoSTM32.elf"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/WoCaoSTM32/Drivers/CMSIS/Include/core_cm1.h">
+		<Unit filename="/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/Drivers/CMSIS/Include/core_cm1.h">
 			<Option target="WoCaoSTM32.elf"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/WoCaoSTM32/Drivers/CMSIS/Include/core_cm23.h">
+		<Unit filename="/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/Drivers/CMSIS/Include/core_cm23.h">
 			<Option target="WoCaoSTM32.elf"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/WoCaoSTM32/Drivers/CMSIS/Include/core_cm3.h">
+		<Unit filename="/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/Drivers/CMSIS/Include/core_cm3.h">
 			<Option target="WoCaoSTM32.elf"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/WoCaoSTM32/Drivers/CMSIS/Include/core_cm33.h">
+		<Unit filename="/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/Drivers/CMSIS/Include/core_cm33.h">
 			<Option target="WoCaoSTM32.elf"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/WoCaoSTM32/Drivers/CMSIS/Include/core_cm4.h">
+		<Unit filename="/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/Drivers/CMSIS/Include/core_cm4.h">
 			<Option target="WoCaoSTM32.elf"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/WoCaoSTM32/Drivers/CMSIS/Include/core_cm7.h">
+		<Unit filename="/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/Drivers/CMSIS/Include/core_cm7.h">
 			<Option target="WoCaoSTM32.elf"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/WoCaoSTM32/Drivers/CMSIS/Include/core_sc000.h">
+		<Unit filename="/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/Drivers/CMSIS/Include/core_sc000.h">
 			<Option target="WoCaoSTM32.elf"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/WoCaoSTM32/Drivers/CMSIS/Include/core_sc300.h">
+		<Unit filename="/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/Drivers/CMSIS/Include/core_sc300.h">
 			<Option target="WoCaoSTM32.elf"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/WoCaoSTM32/Drivers/CMSIS/Include/mpu_armv7.h">
+		<Unit filename="/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/Drivers/CMSIS/Include/mpu_armv7.h">
 			<Option target="WoCaoSTM32.elf"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/WoCaoSTM32/Drivers/CMSIS/Include/mpu_armv8.h">
+		<Unit filename="/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/Drivers/CMSIS/Include/mpu_armv8.h">
 			<Option target="WoCaoSTM32.elf"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/WoCaoSTM32/Drivers/CMSIS/Include/tz_context.h">
+		<Unit filename="/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/Drivers/CMSIS/Include/tz_context.h">
 			<Option target="WoCaoSTM32.elf"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/WoCaoSTM32/Drivers/CMSIS/LICENSE.txt">
+		<Unit filename="/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/Drivers/CMSIS/LICENSE.txt">
 			<Option target="WoCaoSTM32.elf"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/WoCaoSTM32/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h">
+		<Unit filename="/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h">
 			<Option target="WoCaoSTM32.elf"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/WoCaoSTM32/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h">
+		<Unit filename="/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h">
 			<Option target="WoCaoSTM32.elf"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/WoCaoSTM32/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h">
+		<Unit filename="/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h">
 			<Option target="WoCaoSTM32.elf"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/WoCaoSTM32/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h">
+		<Unit filename="/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h">
 			<Option target="WoCaoSTM32.elf"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/WoCaoSTM32/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h">
+		<Unit filename="/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h">
 			<Option target="WoCaoSTM32.elf"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/WoCaoSTM32/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h">
+		<Unit filename="/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h">
 			<Option target="WoCaoSTM32.elf"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/WoCaoSTM32/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h">
+		<Unit filename="/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h">
 			<Option target="WoCaoSTM32.elf"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/WoCaoSTM32/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h">
+		<Unit filename="/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h">
 			<Option target="WoCaoSTM32.elf"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/WoCaoSTM32/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h">
+		<Unit filename="/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h">
 			<Option target="WoCaoSTM32.elf"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/WoCaoSTM32/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h">
+		<Unit filename="/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h">
 			<Option target="WoCaoSTM32.elf"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/WoCaoSTM32/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h">
+		<Unit filename="/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h">
 			<Option target="WoCaoSTM32.elf"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/WoCaoSTM32/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h">
+		<Unit filename="/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h">
 			<Option target="WoCaoSTM32.elf"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/WoCaoSTM32/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h">
+		<Unit filename="/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h">
 			<Option target="WoCaoSTM32.elf"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/WoCaoSTM32/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h">
+		<Unit filename="/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h">
 			<Option target="WoCaoSTM32.elf"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/WoCaoSTM32/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h">
+		<Unit filename="/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h">
 			<Option target="WoCaoSTM32.elf"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/WoCaoSTM32/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h">
+		<Unit filename="/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h">
 			<Option target="WoCaoSTM32.elf"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/WoCaoSTM32/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h">
+		<Unit filename="/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h">
 			<Option target="WoCaoSTM32.elf"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/WoCaoSTM32/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h">
+		<Unit filename="/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h">
 			<Option target="WoCaoSTM32.elf"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/WoCaoSTM32/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h">
+		<Unit filename="/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h">
 			<Option target="WoCaoSTM32.elf"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/WoCaoSTM32/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h">
+		<Unit filename="/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h">
 			<Option target="WoCaoSTM32.elf"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/WoCaoSTM32/Drivers/STM32F4xx_HAL_Driver/License.md">
+		<Unit filename="/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/Drivers/STM32F4xx_HAL_Driver/License.md">
 			<Option target="WoCaoSTM32.elf"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/WoCaoSTM32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c">
+		<Unit filename="/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c">
 			<Option target="WoCaoSTM32.elf"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/WoCaoSTM32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c">
+		<Unit filename="/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c">
 			<Option target="WoCaoSTM32.elf"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/WoCaoSTM32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c">
+		<Unit filename="/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c">
 			<Option target="WoCaoSTM32.elf"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/WoCaoSTM32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c">
+		<Unit filename="/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c">
 			<Option target="WoCaoSTM32.elf"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/WoCaoSTM32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c">
+		<Unit filename="/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c">
 			<Option target="WoCaoSTM32.elf"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/WoCaoSTM32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c">
+		<Unit filename="/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c">
 			<Option target="WoCaoSTM32.elf"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/WoCaoSTM32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c">
+		<Unit filename="/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c">
 			<Option target="WoCaoSTM32.elf"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/WoCaoSTM32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c">
+		<Unit filename="/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c">
 			<Option target="WoCaoSTM32.elf"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/WoCaoSTM32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c">
+		<Unit filename="/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c">
 			<Option target="WoCaoSTM32.elf"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/WoCaoSTM32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c">
+		<Unit filename="/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c">
 			<Option target="WoCaoSTM32.elf"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/WoCaoSTM32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c">
+		<Unit filename="/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c">
 			<Option target="WoCaoSTM32.elf"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/WoCaoSTM32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c">
+		<Unit filename="/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c">
 			<Option target="WoCaoSTM32.elf"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/WoCaoSTM32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c">
+		<Unit filename="/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c">
 			<Option target="WoCaoSTM32.elf"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/WoCaoSTM32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c">
+		<Unit filename="/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c">
 			<Option target="WoCaoSTM32.elf"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/WoCaoSTM32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c">
+		<Unit filename="/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c">
 			<Option target="WoCaoSTM32.elf"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/WoCaoSTM32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c">
+		<Unit filename="/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c">
 			<Option target="WoCaoSTM32.elf"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/WoCaoSTM32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c">
+		<Unit filename="/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c">
 			<Option target="WoCaoSTM32.elf"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/WoCaoSTM32/STM32F407ZGTX_FLASH.ld">
+		<Unit filename="/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/STM32F407ZGTX_FLASH.ld">
 			<Option target="WoCaoSTM32.elf"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/WoCaoSTM32/CMakeLists.txt">
+		<Unit filename="/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>
