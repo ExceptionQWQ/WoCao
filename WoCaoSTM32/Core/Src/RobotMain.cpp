@@ -934,17 +934,16 @@ void RobotMain()
 
     RobotInit();
 
-//    servoDriver.SetServoSpeed(servoSpeed);
+    servoDriver.SetServoSpeed(servoSpeed);
+
+
+
+//    while (true) {
+//        DebugGetAllServoPos();
+//    }
 //
-//
-//    servoDriver.MoveRightToFindCircle();
-//
-//    robotMotion.TrackCenterCircle(OPENMV_CMD_DETECT_GREEN_CIRCLE, 2);
 //
 //    return ;
-
-
-
 
 
     robotMotion.MoveLeftWithDis(30, 25000); //走出起停区
@@ -954,9 +953,11 @@ void RobotMain()
 
     robotMotion.MoveLeftWithDis(30, 12000); //退一段距离扫描二维码
     servoDriver.ClawOpen2();
+
     servoDriver.MoveRightToFindQrcode();
 
     std::string qrcode = GetQrcode();
+//    std::string qrcode = "123+321";
 
     servoDriver.MoveFromRightToFindQrcode();
 
@@ -1109,6 +1110,7 @@ void RobotMain()
 //            servoDriver.UpdateServoPos();
             break;
     }
+
 
     servoDriver.MoveLeftToFindLine();
     robotMotion.MoveForwardWithDisAndFindLeftLine(robotSpeed, 85000); //走到转弯处
@@ -1554,8 +1556,6 @@ void RobotMain()
     robotMotion.MoveForwardWithDisAndFindLeftLine(robotSpeed, 316000); //走到起停区
 
     servoDriver.Init(); //复位
-    robotMotion.MoveXYWithDis(30, 0, -22000); //回到起停区
-    HAL_Delay(100);
-    robotMotion.MoveXYWithDis(5, 0, 500); //稍微离开挡板
+    robotMotion.MoveXYWithDis(30, 0, -18000); //回到起停区
     robotMotion.MoveXYWithDis(30, 40000, 0); //回到起停区
 }

@@ -37,7 +37,7 @@ def ResetSensorForDetectLeftLine():
     sensor.reset()
     sensor.set_pixformat(sensor.GRAYSCALE)
     sensor.set_framesize(sensor.QVGA)
-    sensor.set_windowing((0, 40, 180, 120))
+    sensor.set_windowing((0, 40, 200, 120))
     #sensor.set_auto_gain(False)
     #sensor.set_auto_whitebal(False)
     #sensor.skip_frames(time = 500)
@@ -155,6 +155,7 @@ def ResetSensorForDetectAllCircle():
     #sensor.set_auto_whitebal(False)
     sensor.set_pixformat(sensor.RGB565)
     sensor.set_framesize(sensor.QQVGA)
+    sensor.set_windowing((40, 0, 120, 120))
     #sensor.skip_frames(time = 500)
 
 def DetectAllCircle():
@@ -162,16 +163,14 @@ def DetectAllCircle():
     cnt = 0
     cx = 0
     cy = 0
-    for circle in img.find_circles(threshold = 5000):
-        img.draw_circle(circle.x(), circle.y(), circle.r(), color = (0, 255, 0))
-        img.draw_cross(circle.x(), circle.y(), size = 10, color = (0, 0, 255))
-        cx += circle.x()
-        cy += circle.y()
-        cnt += 1
-    if cnt == 0:
-        return [0, 0]
-    cx /= cnt
-    cy /= cnt
+    maxArea = 0
+    for blob in img.find_blobs([redThresh, greenThresh, blueThresh], invert = False, x_stride = 2, y_stride = 2, area_threshold = 2, pixels_threshold = 2, merge = True, margin = 50):
+        img.draw_rectangle(blob.rect(), color = (0, 255, 0))
+        if maxArea < blob.area():
+            maxArea = blob.area()
+            cx = blob.cx()
+            cy = blob.cy()
+    print(cx, cy)
     return [int(cx), int(cy)]
 
 def ResetSensorForDetectRedObject():

@@ -46,7 +46,7 @@ private:
     void StorePair(uint8_t* data, int dataLen);
 public:
     int GetUpdateTick();
-    void SendSignal(enum OPENMV_CMD cmd, int cnt = 3, long delay = 100);
+    void SendSignal(enum OPENMV_CMD cmd, int cnt = 3, long delay = 500);
     void HandleOpenMVPackage(int cmd, uint8_t* data, int dataLen); //处理串口驱动传输的数据包
     std::string GetStr();
     std::pair<int, int> GetPair();

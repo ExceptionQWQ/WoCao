@@ -32,11 +32,12 @@ def ResetSensorForQrcodeScan():
     sensor.set_auto_gain(False)
     sensor.set_auto_whitebal(False)
     sensor.set_pixformat(sensor.RGB565)
-    sensor.set_framesize(sensor.QVGA)
+    sensor.set_framesize(sensor.VGA)
     #sensor.skip_frames(time = 1000)
 
 def ScanQrcode():
     img = sensor.snapshot()
+    img.lens_corr(2.5) #修复畸变
     qrcodeScanInfo = img.find_qrcodes()
     if qrcodeScanInfo:
         print("qrcode scan info:", qrcodeScanInfo[0].payload())

@@ -392,15 +392,11 @@ stm32f4xx_hal_def.h
 stm32f4xx_hal_def.h
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h
 
-/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/Core/Src/OpenMVDriver.cpp
-OpenMVDriver.h
-/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/Core/Src/OpenMVDriver.h
-
 /Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/Core/Src/RobotMain.cpp
 RobotMain.h
 /Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/Core/Src/RobotMain.h
 
-/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/Core/Src/RobotMotion.cpp
-RobotMotion.h
-/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/Core/Src/RobotMotion.h
+/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/Core/Src/ServoDriver.cpp
+ServoDriver.h
+/Users/mac/Desktop/WoCao-WorkSpace/WoCao/WoCaoSTM32/Core/Src/ServoDriver.h
 
