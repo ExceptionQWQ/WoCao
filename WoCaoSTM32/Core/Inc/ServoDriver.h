@@ -90,6 +90,13 @@ private:
     uint16_t s2Pos = 0;
     uint16_t s3Pos = 0;
     uint16_t servoSpeed = 0;
+    uint16_t yuntaiSpeed = 2500;
+    uint16_t l1Speed = 1000;
+    uint16_t l2Speed = 1000;
+    uint16_t clawSpeed = 1000;
+    uint16_t s1Speed = 2500;
+    uint16_t s2Speed = 2500;
+    uint16_t s3Speed = 2500;
     uint8_t CheckSum(uint8_t startNum, uint8_t endNum, uint8_t* inData);
 };
 

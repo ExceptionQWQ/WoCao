@@ -105,15 +105,15 @@ def DetectColorCircle(thresh):
     if cnt == 0:
         return [0, 0]
 
-    img.flood_fill(int(cx) + 20, int(cy) + 20, seed_threshold = 0.3, floating_threshold = 0.05, color = (255, 255, 0), invert = False, clear_background = False)
-    img.flood_fill(int(cx) + 20, int(cy) - 20, seed_threshold = 0.3, floating_threshold = 0.05, color = (255, 255, 0), invert = False, clear_background = False)
-    img.flood_fill(int(cx) - 20, int(cy) + 20, seed_threshold = 0.3, floating_threshold = 0.05, color = (255, 255, 0), invert = False, clear_background = False)
-    img.flood_fill(int(cx) - 20, int(cy) - 20, seed_threshold = 0.3, floating_threshold = 0.05, color = (255, 255, 0), invert = False, clear_background = False)
+    img.flood_fill(int(cx) + 15, int(cy) + 15, seed_threshold = 0.3, floating_threshold = 0.05, color = (255, 255, 0), invert = False, clear_background = False)
+    img.flood_fill(int(cx) + 15, int(cy) - 15, seed_threshold = 0.3, floating_threshold = 0.05, color = (255, 255, 0), invert = False, clear_background = False)
+    img.flood_fill(int(cx) - 15, int(cy) + 15, seed_threshold = 0.3, floating_threshold = 0.05, color = (255, 255, 0), invert = False, clear_background = False)
+    img.flood_fill(int(cx) - 15, int(cy) - 15, seed_threshold = 0.3, floating_threshold = 0.05, color = (255, 255, 0), invert = False, clear_background = False)
 
-    img.draw_cross(int(cx) + 20, int(cy) + 20, color = (0, 255, 255))
-    img.draw_cross(int(cx) + 20, int(cy) - 20, color = (0, 255, 255))
-    img.draw_cross(int(cx) - 20, int(cy) + 20, color = (0, 255, 255))
-    img.draw_cross(int(cx) - 20, int(cy) - 20, color = (0, 255, 255))
+    img.draw_cross(int(cx) + 15, int(cy) + 15, color = (0, 255, 255))
+    img.draw_cross(int(cx) + 15, int(cy) - 15, color = (0, 255, 255))
+    img.draw_cross(int(cx) - 15, int(cy) + 15, color = (0, 255, 255))
+    img.draw_cross(int(cx) - 15, int(cy) - 15, color = (0, 255, 255))
 
     cx = 0
     cy = 0

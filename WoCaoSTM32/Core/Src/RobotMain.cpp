@@ -295,12 +295,12 @@ void LCDShowQrcodeInfo(std::string qrcode)
 {
     if (qrcode.length() != 7) return ; //不符合二维码扫描结果
     LCD_Draw_Number(10, 10, 1, qrcode[0] - '0');
-    LCD_Draw_Number(40, 10, 1, qrcode[1] - '0');
-    LCD_Draw_Number(70, 10, 1, qrcode[2] - '0');
-    LCD_Draw_Add_Char(100, 10, 1);
-    LCD_Draw_Number(10, 80, 1, qrcode[4] - '0');
-    LCD_Draw_Number(40, 80, 1, qrcode[5] - '0');
-    LCD_Draw_Number(70, 80, 1, qrcode[6] - '0');
+    LCD_Draw_Number(60, 10, 1, qrcode[1] - '0');
+    LCD_Draw_Number(100, 10, 1, qrcode[2] - '0');
+    LCD_Draw_Add_Char(150, 10, 1);
+    LCD_Draw_Number(10, 90, 1, qrcode[4] - '0');
+    LCD_Draw_Number(60, 90, 1, qrcode[5] - '0');
+    LCD_Draw_Number(100, 90, 1, qrcode[6] - '0');
 }
 
 void DebugPrintQrcodeScanInfo()
@@ -930,14 +930,17 @@ void GetObject1(char color, const std::string& colorSeq)
 void RobotMain()
 {
     constexpr double robotSpeed = 100;
-    constexpr uint16_t servoSpeed = 2500;
 
     RobotInit();
 
-    servoDriver.SetServoSpeed(servoSpeed);
+//    servoDriver.MoveLeftToFindLine();
+//    robotMotion.MoveForwardWithDisAndFindLeftLine(100, 250000);
+//
+//    DebugPutH1GetH1();
 
-
-
+//    std::string caonima = "123+321";
+//    LCDShowQrcodeInfo(caonima); //显示扫描结果
+//
 //    while (true) {
 //        DebugGetAllServoPos();
 //    }
@@ -1507,13 +1510,13 @@ void RobotMain()
     servoDriver.MoveRightToFindCircle();
     switch (colorSeq2[1]) { //定位中间的圆环
         case '1':
-            robotMotion.TrackCenterCircle(OPENMV_CMD_DETECT_RED_CIRCLE);
+            robotMotion.TrackCenterCircle(OPENMV_CMD_DETECT_RED_CIRCLE, 8);
             break;
         case '2':
-            robotMotion.TrackCenterCircle(OPENMV_CMD_DETECT_GREEN_CIRCLE);
+            robotMotion.TrackCenterCircle(OPENMV_CMD_DETECT_GREEN_CIRCLE, 8);
             break;
         case '3':
-            robotMotion.TrackCenterCircle(OPENMV_CMD_DETECT_BLUE_CIRCLE);
+            robotMotion.TrackCenterCircle(OPENMV_CMD_DETECT_BLUE_CIRCLE, 8);
             break;
     }
 

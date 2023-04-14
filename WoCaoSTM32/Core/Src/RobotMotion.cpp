@@ -71,10 +71,11 @@ void RobotMotion::KeepVertRight(MediumBlur& mediumBlur)
 
 void RobotMotion::KeepHrizLeft(MediumBlur& mediumBlur)
 {
-    int angle = mediumBlur.GetValue();
-    angle += 0;
+    double angle = mediumBlur.GetValue();
+    double offset = 0.2, scale = 1.0;
     if (angle >= 0 && angle <= 15) {
-        angle *= 0.8;
+        angle += offset;
+        angle *= scale;
         wheelFrontLeftSpeed += angle;
         wheelFrontRightSpeed += angle;
         wheelBackLeftSpeed += angle;
@@ -82,7 +83,8 @@ void RobotMotion::KeepHrizLeft(MediumBlur& mediumBlur)
     }
     if (angle <= 180 && angle >= 165) {
         angle = 180 - angle;
-        angle *= 0.8;
+        angle -= offset;
+        angle *= scale;
         wheelFrontLeftSpeed += -angle;
         wheelFrontRightSpeed += -angle;
         wheelBackLeftSpeed += -angle;
@@ -92,7 +94,7 @@ void RobotMotion::KeepHrizLeft(MediumBlur& mediumBlur)
 
 void RobotMotion::KeepVertLeft(MediumBlur& mediumBlur)
 {;
-    int dis = abs(mediumBlur.GetValue()) - 130;
+    int dis = abs(mediumBlur.GetValue()) - 127;
     if (abs(dis) < 120) {
         dis *= 0.5;
         if (dis > 40) dis = 20;
@@ -286,7 +288,7 @@ void RobotMotion::TrackCenterCircle(enum OPENMV_CMD cmd, int eps)
 {
     openMVDriver.SendSignal(cmd, 3);
     int tick = openMVDriver.GetUpdateTick();
-    int targetX = 300 - 165, targetY = 233;
+    int targetX = 300 - 157, targetY = 232;
     MediumBlur xBlur(17), yBlur(17);
     double disScale = 1;
     int cnt = 0;

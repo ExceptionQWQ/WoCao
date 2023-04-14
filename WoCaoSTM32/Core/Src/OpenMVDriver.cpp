@@ -15,6 +15,7 @@ void OpenMVDriver::SendSignal(enum OPENMV_CMD cmd, int cnt, long delay)
     for (int i = 0; i < cnt; ++i) {
         HAL_UART_Transmit(&huart1, &cmdBuff, 1, 100);
         HAL_UART_Transmit(&huart2, &cmdBuff, 1, 100);
+        HAL_Delay(10);
     }
     if (delay)
         HAL_Delay(delay); //等待传感器稳定

@@ -53,24 +53,31 @@ void ServoDriver::SetServoPos(enum SERVO_TAG servoTag, uint16_t pos, uint16_t sp
     switch (servoTag) {
         case SERVO_TAG_YUNTAI:
             yuntaiAngle = pos;
+            speed = yuntaiSpeed;
             break;
         case SERVO_TAG_L1:
             l1Angle = pos;
+            speed = l1Speed;
             break;
         case SERVO_TAG_L2:
             l2Angle = pos;
+            speed = l2Speed;
             break;
         case SERVO_TAG_CLAW:
             clawAngle = pos;
+            speed = clawSpeed;
             break;
         case SERVO_TAG_S1:
             s1Angle = pos;
+            speed = s1Speed;
             break;
         case SERVO_TAG_S2:
             s2Angle = pos;
+            speed = s2Speed;
             break;
         case SERVO_TAG_S3:
             s3Angle = pos;
+            speed = s3Speed;
             break;
     }
     uint8_t writeTempCmd[] = {0xFF, 0xFF, 0x00, 0x09, 0x04, 0x2A, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00};
@@ -149,11 +156,11 @@ void ServoDriver::UpdateServoPos() //blocking
         }
         if (l1Angle != 0) {
             pos = GetServoPos(SERVO_TAG_L1);
-            if (abs(pos - l1Angle) > 25) flag = false;
+            if (abs(pos - l1Angle) > 40) flag = false;
         }
         if (l2Angle != 0) {
             pos = GetServoPos(SERVO_TAG_L2);
-            if (abs(pos - l2Angle) > 25) flag = false;
+            if (abs(pos - l2Angle) > 40) flag = false;
         }
         if (clawAngle != 0) {
             pos = GetServoPos(SERVO_TAG_CLAW);
@@ -325,36 +332,42 @@ void ServoDriver::MoveToHL1()
     SetServoPos(SERVO_TAG_L1, 708, servoSpeed);
     SetServoPos(SERVO_TAG_L2, 610, servoSpeed);
     UpdateServoPos();
-    SetServoPos(SERVO_TAG_L1, 836, servoSpeed);
-    SetServoPos(SERVO_TAG_L2, 492, servoSpeed);
+    SetServoPos(SERVO_TAG_L1, 802, servoSpeed);
+    SetServoPos(SERVO_TAG_L2, 490, servoSpeed);
     UpdateServoPos();
     SetServoPos(SERVO_TAG_L1, 922, servoSpeed);
-    SetServoPos(SERVO_TAG_L2, 481, servoSpeed);
+    SetServoPos(SERVO_TAG_L2, 474, servoSpeed);
     UpdateServoPos();
 }
 
 void ServoDriver::MoveFromHL1()
 {
-    SetServoPos(SERVO_TAG_L1, 832, servoSpeed);
-    SetServoPos(SERVO_TAG_L2, 500, servoSpeed);
+    SetServoPos(SERVO_TAG_L1, 802, servoSpeed);
+    SetServoPos(SERVO_TAG_L2, 490, servoSpeed);
     UpdateServoPos();
     MoveToTop();
 }
 
 void ServoDriver::MoveToHL2()
 {
-    SetServoPos(SERVO_TAG_L1, 680, servoSpeed);
-    SetServoPos(SERVO_TAG_L2, 613, servoSpeed);
+    SetServoPos(SERVO_TAG_L1, 646, servoSpeed);
+    SetServoPos(SERVO_TAG_L2, 614, servoSpeed);
     UpdateServoPos();
-    SetServoPos(SERVO_TAG_L1, 784, servoSpeed);
-    SetServoPos(SERVO_TAG_L2, 527, servoSpeed);
+    SetServoPos(SERVO_TAG_L1, 722, servoSpeed);
+    SetServoPos(SERVO_TAG_L2, 530, servoSpeed);
+    UpdateServoPos();
+    SetServoPos(SERVO_TAG_L1, 790, servoSpeed);
+    SetServoPos(SERVO_TAG_L2, 534, servoSpeed);
     UpdateServoPos();
 }
 
 void ServoDriver::MoveFromHL2()
 {
-    SetServoPos(SERVO_TAG_L1, 680, servoSpeed);
-    SetServoPos(SERVO_TAG_L2, 613, servoSpeed);
+    SetServoPos(SERVO_TAG_L1, 722, servoSpeed);
+    SetServoPos(SERVO_TAG_L2, 530, servoSpeed);
+    UpdateServoPos();
+    SetServoPos(SERVO_TAG_L1, 646, servoSpeed);
+    SetServoPos(SERVO_TAG_L2, 614, servoSpeed);
     UpdateServoPos();
     MoveToTop();
 }
@@ -364,8 +377,8 @@ void ServoDriver::MoveToHM1()
     SetServoPos(SERVO_TAG_L1, 637, servoSpeed);
     SetServoPos(SERVO_TAG_L2, 580, servoSpeed);
     UpdateServoPos();
-    SetServoPos(SERVO_TAG_L1, 815, servoSpeed);
-    SetServoPos(SERVO_TAG_L2, 424, servoSpeed);
+    SetServoPos(SERVO_TAG_L1, 833, servoSpeed);
+    SetServoPos(SERVO_TAG_L2, 391, servoSpeed);
     UpdateServoPos();
     SetServoPos(SERVO_TAG_L1, 924, servoSpeed);
     SetServoPos(SERVO_TAG_L2, 390, servoSpeed);
@@ -374,26 +387,32 @@ void ServoDriver::MoveToHM1()
 
 void ServoDriver::MoveFromHM1()
 {
-    SetServoPos(SERVO_TAG_L1, 815, servoSpeed);
-    SetServoPos(SERVO_TAG_L2, 424, servoSpeed);
+    SetServoPos(SERVO_TAG_L1, 833, servoSpeed);
+    SetServoPos(SERVO_TAG_L2, 391, servoSpeed);
     UpdateServoPos();
     MoveToTop();
 }
 
 void ServoDriver::MoveToHM2()
 {
-    SetServoPos(SERVO_TAG_L1, 645, servoSpeed);
-    SetServoPos(SERVO_TAG_L2, 548, servoSpeed);
+    SetServoPos(SERVO_TAG_L1, 633, servoSpeed);
+    SetServoPos(SERVO_TAG_L2, 536, servoSpeed);
     UpdateServoPos();
-    SetServoPos(SERVO_TAG_L1, 768, servoSpeed);
-    SetServoPos(SERVO_TAG_L2, 458, servoSpeed);
+    SetServoPos(SERVO_TAG_L1, 708, servoSpeed);
+    SetServoPos(SERVO_TAG_L2, 459, servoSpeed);
+    UpdateServoPos();
+    SetServoPos(SERVO_TAG_L1, 772, servoSpeed);
+    SetServoPos(SERVO_TAG_L2, 459, servoSpeed);
     UpdateServoPos();
 }
 
 void ServoDriver::MoveFromHM2()
 {
-    SetServoPos(SERVO_TAG_L1, 645, servoSpeed);
-    SetServoPos(SERVO_TAG_L2, 548, servoSpeed);
+    SetServoPos(SERVO_TAG_L1, 708, servoSpeed);
+    SetServoPos(SERVO_TAG_L2, 459, servoSpeed);
+    UpdateServoPos();
+    SetServoPos(SERVO_TAG_L1, 633, servoSpeed);
+    SetServoPos(SERVO_TAG_L2, 536, servoSpeed);
     UpdateServoPos();
     MoveToTop();
 }
@@ -403,26 +422,29 @@ void ServoDriver::MoveToHR1()
     SetServoPos(SERVO_TAG_L1, 632, servoSpeed);
     SetServoPos(SERVO_TAG_L2, 656, servoSpeed);
     UpdateServoPos();
-    SetServoPos(SERVO_TAG_L1, 807, servoSpeed);
-    SetServoPos(SERVO_TAG_L2, 469, servoSpeed);
+    SetServoPos(SERVO_TAG_L1, 804, servoSpeed);
+    SetServoPos(SERVO_TAG_L2, 472, servoSpeed);
     UpdateServoPos();
     SetServoPos(SERVO_TAG_L1, 922, servoSpeed);
-    SetServoPos(SERVO_TAG_L2, 475, servoSpeed);
+    SetServoPos(SERVO_TAG_L2, 473, servoSpeed);
     UpdateServoPos();
 }
 
 void ServoDriver::MoveFromHR1()
 {
-    SetServoPos(SERVO_TAG_L1, 807, servoSpeed);
-    SetServoPos(SERVO_TAG_L2, 469, servoSpeed);
+    SetServoPos(SERVO_TAG_L1, 804, servoSpeed);
+    SetServoPos(SERVO_TAG_L2, 472, servoSpeed);
     UpdateServoPos();
     MoveToTop();
 }
 
 void ServoDriver::MoveToHR2()
 {
-    SetServoPos(SERVO_TAG_L1, 671, servoSpeed);
-    SetServoPos(SERVO_TAG_L2, 603, servoSpeed);
+    SetServoPos(SERVO_TAG_L1, 571, servoSpeed);
+    SetServoPos(SERVO_TAG_L2, 655, servoSpeed);
+    UpdateServoPos();
+    SetServoPos(SERVO_TAG_L1, 652, servoSpeed);
+    SetServoPos(SERVO_TAG_L2, 500, servoSpeed);
     UpdateServoPos();
     SetServoPos(SERVO_TAG_L1, 781, servoSpeed);
     SetServoPos(SERVO_TAG_L2, 522, servoSpeed);
@@ -431,8 +453,11 @@ void ServoDriver::MoveToHR2()
 
 void ServoDriver::MoveFromHR2()
 {
-    SetServoPos(SERVO_TAG_L1, 671, servoSpeed);
-    SetServoPos(SERVO_TAG_L2, 603, servoSpeed);
+    SetServoPos(SERVO_TAG_L1, 652, servoSpeed);
+    SetServoPos(SERVO_TAG_L2, 500, servoSpeed);
+    UpdateServoPos();
+    SetServoPos(SERVO_TAG_L1, 571, servoSpeed);
+    SetServoPos(SERVO_TAG_L2, 655, servoSpeed);
     UpdateServoPos();
     MoveToTop();
 }
@@ -466,7 +491,7 @@ void ServoDriver::SpinToHM()
 
 void ServoDriver::SpinToHR()
 {
-    SetServoPos(SERVO_TAG_YUNTAI, 938, servoSpeed);
+    SetServoPos(SERVO_TAG_YUNTAI, 948, servoSpeed);
     UpdateServoPos();
 }
 

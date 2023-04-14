@@ -371,7 +371,7 @@ void LCD_direction(u8 direction)
 
 void LCD_Draw_Number_Top(uint16_t x, uint16_t y, uint8_t size)
 {
-    uint16_t width = 3 * size, length = 20 * size;
+    uint16_t width = 5 * size, length = 30 * size;
     for (uint16_t i = x; i < x + length; ++i) {
         for (uint16_t j = y; j < y + width; ++j) {
             LCD_DrawPoint(i, j);
@@ -381,7 +381,7 @@ void LCD_Draw_Number_Top(uint16_t x, uint16_t y, uint8_t size)
 
 void LCD_Draw_Number_Top_Left(uint16_t x, uint16_t y, uint8_t size)
 {
-    uint16_t width = 3 * size, length = 20 * size;
+    uint16_t width = 5 * size, length = 30 * size;
     for (uint16_t i = x; i < x + width; ++i) {
         for (uint16_t j = y; j < y + length; ++j) {
             LCD_DrawPoint(i, j);
@@ -390,7 +390,7 @@ void LCD_Draw_Number_Top_Left(uint16_t x, uint16_t y, uint8_t size)
 }
 void LCD_Draw_Number_Top_Right(uint16_t x, uint16_t y, uint8_t size)
 {
-    uint16_t width = 3 * size, length = 20 * size;
+    uint16_t width = 5 * size, length = 30 * size;
     for (uint16_t i = x + length - width; i < x + length; ++i) {
         for (uint16_t j = y; j < y + length; ++j) {
             LCD_DrawPoint(i, j);
@@ -399,7 +399,7 @@ void LCD_Draw_Number_Top_Right(uint16_t x, uint16_t y, uint8_t size)
 }
 void LCD_Draw_Number_Middle(uint16_t x, uint16_t y, uint8_t size)
 {
-    uint16_t width = 3 * size, length = 20 * size;
+    uint16_t width = 5 * size, length = 30 * size;
     for (uint16_t i = x; i < x + length; ++i) {
         for (uint16_t j = y + length; j < y + length + width; ++j) {
             LCD_DrawPoint(i, j);
@@ -408,7 +408,7 @@ void LCD_Draw_Number_Middle(uint16_t x, uint16_t y, uint8_t size)
 }
 void LCD_Draw_Number_Bottom_Left(uint16_t x, uint16_t y, uint8_t size)
 {
-    uint16_t width = 3 * size, length = 20 * size;
+    uint16_t width = 5 * size, length = 30 * size;
     for (uint16_t i = x; i < x + width; ++i) {
         for (uint16_t j = y + length ; j < y + 2 * length + width; ++j) {
             LCD_DrawPoint(i, j);
@@ -417,7 +417,7 @@ void LCD_Draw_Number_Bottom_Left(uint16_t x, uint16_t y, uint8_t size)
 }
 void LCD_Draw_Number_Bottom_Right(uint16_t x, uint16_t y, uint8_t size)
 {
-    uint16_t width = 3 * size, length = 20 * size;
+    uint16_t width = 5 * size, length = 30 * size;
     for (uint16_t i = x + length - width; i < x + length; ++i) {
         for (uint16_t j = y + length ; j < y + 2 * length + width; ++j) {
             LCD_DrawPoint(i, j);
@@ -426,7 +426,7 @@ void LCD_Draw_Number_Bottom_Right(uint16_t x, uint16_t y, uint8_t size)
 }
 void LCD_Draw_Number_Bottom(uint16_t x, uint16_t y, uint8_t size)
 {
-    uint16_t width = 3 * size, length = 20 * size;
+    uint16_t width = 5 * size, length = 30 * size;
     for (uint16_t i = x; i < x + length; ++i) {
         for (uint16_t j = y + 2 * length; j < y + 2 * length + width; ++j) {
             LCD_DrawPoint(i, j);
@@ -571,7 +571,7 @@ void LCD_Draw_Number(uint16_t x, uint16_t y, uint8_t size, uint8_t number)
 }
 void LCD_Draw_Add_Char(uint16_t x, uint16_t y, uint8_t size)
 {
-    uint16_t width = 3 * size, length = 20 * size;
+    uint16_t width = 5 * size, length = 30 * size;
     for (uint16_t i = x + length; i < x + length + width; ++i) {
         for (uint16_t j = y; j < y + 2 * length + width; ++j) {
             LCD_DrawPoint(i, j);
